@@ -1,0 +1,143 @@
+/***** FONTES *****/
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+/***** fim FONTES *****/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-black: #000;
+    --button-color: #E0E0E0;
+
+}
+
+body {
+}
+
+.top-screen .athlete-slider {
+    width: 100%;
+    height: 100vh;
+    max-height: 100vh;
+    position: relative;
+}
+
+.top-screen .athlete-slider div::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    opacity: 1;
+}
+
+.top-screen .athlete-slider .second--item img {
+    min-width: 60%;
+}
+
+.top-screen .athlete-slider .first--item.selected::after {
+    background-image: linear-gradient(
+        90deg, 
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    )
+}
+
+.top-screen .athlete-slider .second--item.selected::after {
+    background-image: linear-gradient(
+        90deg, 
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0)
+    );
+}
+.top-screen .athlete-slider .third--item.selected::after {
+    background-image: linear-gradient(
+        90deg, 
+        rgb(0, 0, 0),
+        rgb(0, 0, 0),
+        rgba(0, 0, 0, 50%),
+        rgba(0, 0, 0, 0)
+    );
+}
+
+.top-screen .athlete-slider .item {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.top-screen .athlete-slider img {
+    width: auto;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.top-screen .athlete-slider .item.selected {
+    opacity: 1;
+}
+
+
+.top-screen main {
+    position: absolute;
+    top: 0;
+    margin: 3% 10%;
+    color: #fff;
+}
+
+/***** CONTEÚDO PÁGINA TOPO *****/
+button { /*Resetar estilo de todos os botões*/
+    background-color: unset;
+    outline: none;
+    color: unset;
+    border: none;
+}
+
+main .hero-section h1 {
+    font-family: 'Lora', serif;
+    font-size: 64px;
+    margin-top: 1.5em;
+}
+
+main .hero-section p {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    font-size: 56px;
+}
+
+main .hero-section .hero-name {
+    font-weight: bolder;
+}
+main .hero-section .buttons {
+    margin-top: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+main .hero-section .buttons button {
+    font-size: 18px;
+    border-radius: 4px;
+    width: 25%;
+    padding: 15px 0;
+    cursor: pointer;
+    box-shadow: 0 2px 2px 0 #000;
+}
+
+main .hero-section .buttons #invest {
+    background-color: var(--button-color);
+    color: #000;
+}
+
+main .hero-section .buttons #startups {
+    border: 1px solid var(--button-color);
+    color: #fff;
+}
+
+/***** fim CONTEÚDO PÁGINA TOPO *****/
