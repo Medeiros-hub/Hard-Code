@@ -12,7 +12,10 @@
 :root {
     --color-black: #000;
     --button-color: #E0E0E0;
+}
 
+body {
+    background-color: var(--color-black);
 }
 
 .top-screen .athlete-slider {
@@ -102,15 +105,48 @@ main .hero-section h1 {
     margin-top: 1.5em;
 }
 
-main .hero-section p {
+main .hero-section div {
+    max-height: 10vh;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
     font-size: 56px;
+
+    display: flex;
+}
+
+main .hero-section div p {
+    border: 1px solid #000;
+    font-weight: bolder;
+    width: auto;
+    height: auto;
+    margin: 0 10px;
+
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
 }
 
 main .hero-section .hero-name {
-    font-weight: bolder;
+    position: absolute; /*Verificar*/
+    transition: all 1s cubic-bezier(0, 0, 0, 0.82);
 }
+
+main .hero-section .hero-name:nth-child(1) {
+    top: 0px;
+}
+
+main .hero-section .hero-name:nth-child(2) {
+    top: -67px;
+}
+
+main .hero-section .hero-name:nth-child(3) {
+    top: 200px;
+}
+
+
+
+
 main .hero-section .buttons {
     margin-top: 55px;
     display: flex;

@@ -19,11 +19,24 @@ function nextImg() {
         .classList.add("selected")
 }
 
-function start() {
+
+let heroName = document.
+        querySelectorAll('main .hero-section .hero-name')
+
+
+function nextHeroName() {
+    /*heroName[currentImgIndex].style.top = 'auto'
+
+    heroName[currentImgIndex].style.top = 0*/
+}
+
+function startImg() {
     setInterval(() => {
         nextImg()
+        nextHeroName()
     }, time)
 }
 
-
-window.addEventListener('load', start)
+window.addEventListener('load', () => {
+    startImg()
+})
