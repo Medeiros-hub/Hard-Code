@@ -4,11 +4,14 @@ let time = 2000,
         .querySelectorAll(".athlete-slider .item"),
     max = images.length
 
+let heroName = document.
+        querySelectorAll('main .hero-section .hero-name')
 
 function nextImg() {
     images[currentImgIndex]
         .classList.remove("selected")
-
+    heroName[currentImgIndex]
+        .classList.remove("selected")
     currentImgIndex++
     
     if (currentImgIndex >= max) {
@@ -17,23 +20,15 @@ function nextImg() {
 
     images[currentImgIndex]
         .classList.add("selected")
+    heroName[currentImgIndex]
+        .classList.add("selected")
 }
 
 
-let heroName = document.
-        querySelectorAll('main .hero-section .hero-name')
-
-
-function nextHeroName() {
-    /*heroName[currentImgIndex].style.top = 'auto'
-
-    heroName[currentImgIndex].style.top = 0*/
-}
 
 function startImg() {
     setInterval(() => {
         nextImg()
-        nextHeroName()
     }, time)
 }
 

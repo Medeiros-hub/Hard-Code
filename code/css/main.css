@@ -92,6 +92,10 @@ body {
 }
 
 /***** CONTEÚDO PÁGINA TOPO *****/
+.bold {
+    font-weight: bold;
+}
+
 button { /*Resetar estilo de todos os botões*/
     background-color: unset;
     outline: none;
@@ -99,27 +103,30 @@ button { /*Resetar estilo de todos os botões*/
     border: none;
 }
 
+.hero-section {
+    font-family: 'Montserrat', sans-serif;
+}
+
 main .hero-section h1 {
-    font-family: 'Lora', serif;
+    font-family: 'Lora', serif !important;
     font-size: 64px;
     margin-top: 1.5em;
 }
 
-main .hero-section div {
+.hero-section .hero-content {
     max-height: 10vh;
-    font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
     font-size: 56px;
 
     display: flex;
 }
 
-main .hero-section div p {
+.hero-section .hero-content .hero-group {
     border: 1px solid #000;
     font-weight: bolder;
-    width: auto;
+    width: 300px;
     height: auto;
-    margin: 0 10px;
+    margin-left: 8px;
 
     display: flex;
     flex-direction: column;
@@ -127,34 +134,38 @@ main .hero-section div p {
     position: relative;
 }
 
-main .hero-section .hero-name {
-    position: absolute; /*Verificar*/
-    transition: all 1s cubic-bezier(0, 0, 0, 0.82);
+.hero-section .hero-name {
+    transition: margin-top 1s cubic-bezier(0, 0, 0, 0.82);
+    position: absolute;
+    margin-top: 80px;
 }
 
-main .hero-section .hero-name:nth-child(1) {
-    top: 0px;
+.hero-section .hero-name.selected {
+    margin-top: 0;
 }
 
-main .hero-section .hero-name:nth-child(2) {
-    top: -67px;
+.hero-section div:last-child {
+    overflow: hidden;
+    border: 1px solid #000;
+    max-width: fit-content;
 }
 
-main .hero-section .hero-name:nth-child(3) {
-    top: 200px;
+.hero-section .hero-description i {
+    font-size: 20px;
 }
 
+.hero-section .hero-description span {
+    font-size: 16px;
+}
 
-
-
-main .hero-section .buttons {
+ .hero-section .buttons {
     margin-top: 55px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
 }
 
-main .hero-section .buttons button {
+ .hero-section .buttons button {
     font-size: 18px;
     border-radius: 4px;
     width: 25%;
@@ -163,12 +174,12 @@ main .hero-section .buttons button {
     box-shadow: 0 2px 2px 0 #000;
 }
 
-main .hero-section .buttons #invest {
+ .hero-section .buttons #invest {
     background-color: var(--button-color);
     color: #000;
 }
 
-main .hero-section .buttons #startups {
+ .hero-section .buttons #startups {
     border: 1px solid var(--button-color);
     color: #fff;
 }
