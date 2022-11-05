@@ -26,20 +26,18 @@ function nextImg() {
     removeSelected(heroImages)
     removeSelected(heroName)
     removeSelected(heroDescription)
-    /*removeSelected(heroBars)*/
-    
-    if (currentImgIndex == 0) {
-        heroBars.style.left = 0
-    } else if (currentImgIndex == 1) {
-        heroBars.style.left = '21.5%'
-    } else {
-        heroBars.style.left = '45%'
-    }
-
     currentImgIndex++
     
     if (currentImgIndex >= max) {
         currentImgIndex = 0
+    }
+
+    if (currentImgIndex == 0) {
+        heroBars.style.left = '0'
+    } else if (currentImgIndex == 1) {
+        heroBars.style.left = '33.3%'
+    } else {
+        heroBars.style.left = '67%'
     }
 
     addSelected(heroImages)

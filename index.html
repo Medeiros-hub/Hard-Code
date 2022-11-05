@@ -6,38 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buz</title>
 
+    <!--Fontes-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!--Fontes-->
+
     <link rel="stylesheet" href="./code/css/main.css">
+    <link rel="stylesheet" href="./code/css/mobile.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <header class="top-screen">
         <div class="athlete-slider">
-            <div class="item third--item selected">
+            <div class="item first--item selected">
                 <img 
                     src="./assets/img/hero/serena_williams.png" 
                     alt="Serena Williams"
                 >
             </div>
-            <div class="item first--item">
+            <div class="item second--item">
                 <img 
                     src="./assets/img/hero/bono_vox_u2.png" 
                     alt="Bono Vox"
                 >
             </div>
-            <div class="item second--item">
+            <div class="item third--item">
                 <img 
                 src="./assets/img/hero/conor_mcgregor.png" 
                 alt="Conor McGregor"
                 >
             </div>
         </div>
-        <main>
-            <img src="./assets/img/logo_buz.png" alt="Logo Buz">
+        <main class="top-screen-container">
+            <img class="logo" src="./assets/img/logo_buz.png" alt="Logo Buz">
             <section class="hero-section">
                 <h1>MEDIA FOR EQUITY</h1>
                 <div class="hero-content">
-                    <p>Invest like a</p>
+                    <p style="font-weight: 200;">Invest like a</p>
                     <p class="hero-group">
                         <span class="hero-name selected">Williams.</span>
                         <span class="hero-name">Bono.</span>
@@ -49,44 +56,46 @@
                     <button id="startups">Para Startups</button>
                 </div>
                 <div class="hero-description">
-                    <p class="selected">
-                        <i class="fa fa-solid fa-heart"></i>
-                        <span>
-                            Serena Williams, uma das maiores tenistas de todos os 
-                            tempos; já investiu em 
-                            <span class="bold">60 startups</span>, sendo que 
-                            <span class="bold">13 viraram unicórnios</span>. Acabou de criar um fundo de 
-                            <span class="bold">$ 111 milhões</span>.
-                        </span>
-                    </p>
-                    <p>
-                        <i class="fa fa-solid fa-comment"></i>
-                        <span>
-                            Bono Vox é o cantor mais rico do mundo, mas a maior parte da fortuna não veio da música. 
-                            Ele comprou comprou 
-                            <span class="bold">2,3% do Facebook</span>, e isso hoje equivale 
-                            <span>U$ 12,9 bilhão</span>.
-                        </span>
-                    </p>
-                    <p>
-                        <i>
-                            <img src="./assets/icons/icon-verified.png" 
-                                style="
-                                filter: invert(1); 
-                                width: 35px;
-                                "
-                            >
-                        </i>
-                        <span>
-                            Conor McGregor é o atleta mais bem pago do mundo. Ele recebeu S$ 22 milhões lutando e 
-                            <span class="bold">US$ 158 milhões</span> faz parte de patrocínios e retorno de 
-                            <span class="bold">investimento em startup.</span>.
-                        </span>
-                    </p>
-                </div>
-                <div class="bars-group">
-                    <span class="bar"></span>
-                    <span class="main-bar"></span>
+                    <div>
+                        <p class="selected">
+                            <i class="fa fa-solid fa-heart"></i>
+                            <span>
+                                Serena Williams, uma das maiores tenistas de todos os 
+                                tempos; já investiu em 
+                                <span class="bold">60 startups</span>, sendo que 
+                                <span class="bold">13 viraram unicórnios</span>. Acabou de criar um fundo de 
+                                <span class="bold">$ 111 milhões</span>.
+                            </span>
+                        </p>
+                        <p>
+                            <i class="fa fa-solid fa-comment"></i>
+                            <span>
+                                Bono Vox é o cantor mais rico do mundo, mas a maior parte da fortuna não veio da música. 
+                                Ele comprou comprou 
+                                <span class="bold">2,3% do Facebook</span>, e isso hoje equivale 
+                                <span>U$ 12,9 bilhão</span>.
+                            </span>
+                        </p>
+                        <p>
+                            <i>
+                                <img src="./assets/icons/icon-verified.png" 
+                                    style="
+                                    filter: invert(1); 
+                                    width: 35px;
+                                    "
+                                >
+                            </i>
+                            <span>
+                                Conor McGregor é o atleta mais bem pago do mundo. Ele recebeu S$ 22 milhões lutando e 
+                                <span class="bold">US$ 158 milhões</span> faz parte de patrocínios e retorno de 
+                                <span class="bold">investimento em startup.</span>.
+                            </span>
+                        </p>
+                    </div>
+                    <div class="bars-group">
+                        <span class="bar"></span>
+                        <span class="main-bar"></span>
+                    </div>
                 </div>
             </section>
         </main>
