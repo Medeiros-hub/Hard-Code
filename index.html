@@ -8,11 +8,17 @@
 
     <link rel="stylesheet" href="./code/css/main.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 </head>
 <body>
     <header class="top-screen">
         <div class="athlete-slider">
+            <div class="item third--item selected">
+                <img 
+                    src="./assets/img/hero/serena_williams.png" 
+                    alt="Serena Williams"
+                >
+            </div>
             <div class="item first--item">
                 <img 
                     src="./assets/img/hero/bono_vox_u2.png" 
@@ -25,12 +31,6 @@
                 alt="Conor McGregor"
                 >
             </div>
-            <div class="item third--item selected">
-                <img 
-                    src="./assets/img/hero/serena_williams.png" 
-                    alt="Serena Williams"
-                >
-            </div>
         </div>
         <main>
             <img src="./assets/img/logo_buz.png" alt="Logo Buz">
@@ -39,26 +39,54 @@
                 <div class="hero-content">
                     <p>Invest like a</p>
                     <p class="hero-group">
+                        <span class="hero-name selected">Williams.</span>
                         <span class="hero-name">Bono.</span>
                         <span class="hero-name">McGregor.</span>
-                        <span class="hero-name selected">Williams.</span>
                     </p>
                 </div>
                 <div class="buttons">
                     <button id="invest">Seja Investidor</button>
                     <button id="startups">Para Startups</button>
                 </div>
-                <div>
-                    <p class="hero-description">
+                <div class="hero-description">
+                    <p class="selected">
                         <i class="fa fa-solid fa-heart"></i>
                         <span>
                             Serena Williams, uma das maiores tenistas de todos os 
                             tempos; já investiu em 
                             <span class="bold">60 startups</span>, sendo que 
-                            <span class="bold">13 viraram unicórnios </span>. Acabou de criar um fundo de 
-                            <span class="bold">$ 111 milhões.</span>
+                            <span class="bold">13 viraram unicórnios</span>. Acabou de criar um fundo de 
+                            <span class="bold">$ 111 milhões</span>.
                         </span>
                     </p>
+                    <p>
+                        <i class="fa fa-solid fa-comment"></i>
+                        <span>
+                            Bono Vox é o cantor mais rico do mundo, mas a maior parte da fortuna não veio da música. 
+                            Ele comprou comprou 
+                            <span class="bold">2,3% do Facebook</span>, e isso hoje equivale 
+                            <span>U$ 12,9 bilhão</span>.
+                        </span>
+                    </p>
+                    <p>
+                        <i>
+                            <img src="./assets/icons/icon-verified.png" 
+                                style="
+                                filter: invert(1); 
+                                width: 35px;
+                                "
+                            >
+                        </i>
+                        <span>
+                            Conor McGregor é o atleta mais bem pago do mundo. Ele recebeu S$ 22 milhões lutando e 
+                            <span class="bold">US$ 158 milhões</span> faz parte de patrocínios e retorno de 
+                            <span class="bold">investimento em startup.</span>.
+                        </span>
+                    </p>
+                </div>
+                <div class="bars-group">
+                    <span class="bar"></span>
+                    <span class="main-bar"></span>
                 </div>
             </section>
         </main>
