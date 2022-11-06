@@ -3,6 +3,10 @@
         width: 100vw;
     }
 
+    .top-screen {
+        overflow: hidden;
+    }
+
     .top-screen .athlete-slider img {
         right: -12em;
         transform: scale(1.3);
