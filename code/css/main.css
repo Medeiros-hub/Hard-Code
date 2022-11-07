@@ -277,10 +277,23 @@ button { /*Resetar estilo de todos os botões*/
     font-size: 48px;
 }
 
-.main-about .section-investor, .section-investor > div {
+.main-about .section-investor, .section-investor .questions-group {
+    height: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: space-around;
+}
+
+.section-investor > p:first-child {
+    font-size: 26px;
+}
+
+.section-investor .questions-group .questions-item h2 {
+    font-size: 18px;
+}
+
+.section-investor .questions-group .questions-item p {
+    font-size: 16px;
 }
 
 .main-about .section-investor button.investor-button{
@@ -327,6 +340,3 @@ button { /*Resetar estilo de todos os botões*/
 
 
 /***** KEYFRAMES *****/
-@keyframes button-investor {
-    
-}
