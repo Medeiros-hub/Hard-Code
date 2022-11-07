@@ -10,6 +10,7 @@ let time = 2000,
     heroBars = document
         .querySelector('.bars-group .main-bar')
 
+        
 
 function removeSelected(propertie) {
     propertie[currentImgIndex]
