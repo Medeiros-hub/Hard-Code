@@ -250,6 +250,7 @@ button { /*Resetar estilo de todos os botões*/
 
     height: 100vh;
     display: grid;
+    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr 2%;
     justify-items: center;
     align-items: center;
