@@ -103,7 +103,7 @@ body {
 
 /***** CONTEÚDO PÁGINA TOPO *****/
 .bold {
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 button { /*Resetar estilo de todos os botões*/
@@ -186,7 +186,7 @@ button { /*Resetar estilo de todos os botões*/
 }
 
 .hero-section .hero-description > div:first-child {
-    height: 80px;
+    height: 100%;
 
     overflow: hidden;
     position: relative;
@@ -247,8 +247,12 @@ button { /*Resetar estilo de todos os botões*/
 /***** CONTEÚDO ABOUT US *****/
 .main-about {
     font-family: var(--font-Montserrat);
+
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 2%;
+    justify-items: center;
+    align-items: center;
     gap: 20px;
 }
 
@@ -258,7 +262,8 @@ button { /*Resetar estilo de todos os botões*/
 }
 
 .main-about > section:first-child #the-rock{
-    width: 50%;
+    width: 100%;
+    min-width: 50%;
 }
 
 .main-about > section .title-group {
@@ -278,11 +283,38 @@ button { /*Resetar estilo de todos os botões*/
 }
 
 .main-about .section-investor, .section-investor .questions-group {
-    height: 100%;
+    font-weight: 500;
+    
+    height: 75%;
+    max-width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 }
+
+.questions-group .questions-item span.bold {
+    position: relative;
+}
+
+.questions-group .questions-item span.bold::after {
+    content: '';
+    display: block;
+    padding: .5px;
+    width: 0;
+    background-color: #000;
+    opacity: 0.5;
+    transition: all 1s ease-in-out;
+    
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.questions-group:hover .questions-item span.bold:after {
+    width: 100%;
+    opacity: 1;
+}
+
 
 .section-investor > p:first-child {
     font-size: 26px;
@@ -302,15 +334,15 @@ button { /*Resetar estilo de todos os botões*/
     font-size: 18px;
     border-radius: 4px;
     min-width: 30%;
-    padding: 15px 20%;
+    padding: 15px 10%;
     cursor: pointer;
+    transition: transform 1s, box-shadow 1s ease-in-out;
     box-shadow: 0 2px 2px 0 #000;
-    transition: transform 1s ease-in-out;
 }
 
 .main-about .section-investor button.investor-button:hover{
     transform: translate(10px, -10px);
-    box-shadow: 0 2px 2px 0 rgba(128, 128, 128, 0.9);
+    box-shadow: -6px 6px 2px 0 rgba(128, 128, 128, 0.6);
 }
 
 .main-about section.bars-right {
