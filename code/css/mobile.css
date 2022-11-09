@@ -1,6 +1,5 @@
 @media only screen and (max-width: 800px){
     body {
-        width: 100vw;
     }
 
     .top-screen {
@@ -88,6 +87,7 @@
 
     /***** CONTEÚDO ABOUT US *****/
     .main-about {
+        height: fit-content;
         position: relative;
         grid-template-columns: 1fr;
         grid-auto-flow: dense;
@@ -147,7 +147,6 @@
     .main-about .section-investor button.investor-button {
         display: none;
     }
-
 
     .main-about section.bars-right {
         display: none;

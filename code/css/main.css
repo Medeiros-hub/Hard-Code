@@ -20,6 +20,8 @@
 
 body {
     background-color: var(--color-white);
+
+    width: fit-content;
     display: flex;
     flex-direction: column;
 }
@@ -394,7 +396,6 @@ button { /*Resetar estilo de todos os botões*/
     background-color: var(--color-black);
     color: var(--color-white);
     font-family: var(--font-Montserrat);
-    height: 100vh;
 }
 
 .details-invest .title-detail h1 {
