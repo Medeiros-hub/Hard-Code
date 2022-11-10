@@ -31,7 +31,7 @@
     .top-screen-container .logo {
         position: relative;
         top: 25px;
-        left: -195px;
+        left: -20%;
     }
 
     .top-screen-container .hero-section {
@@ -150,9 +150,62 @@
         display: none;
     }
 
-    .main-about section.bars-right {
+    section.bars-right {
         display: none;
     }
+
+
+
+
+    .details-invest {
+        height: fit-content;
+    }
+
+    .details-invest .container-details {
+        width: 80%;
+        height: 170vh;
+        margin: 50px 0;
+    }
+
+    .details-invest .container-details article {
+        display: none;
+    }
+
+    .grid-details .grid-container .grid-carousel {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-carousel .title-detail {
+        grid-row: 1;
+    }
+
+    .grid-carousel .title-detail h1 {
+        font-size: 22px;
+        text-decoration: none;
+    }
+
+    .grid-carousel .title-detail p {
+        font-size: 16px;
+        text-decoration: none;
+    }
+
+    .grid-carousel .description-invest {
+        grid-row: 2;
+    }
+
+    .grid-carousel .description-invest p{
+        font-size: 14px;
+        text-decoration: none;
+    }
+
+    .grid-carousel .chart-section {
+        grid-row: 3;
+    }
+
+    .grid-carousel img {
+        width: 100%;
+    }
+
 
     /***** fim CONTEÚDO ABOUT US *****/
 

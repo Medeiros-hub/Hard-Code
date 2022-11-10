@@ -68,3 +68,32 @@ function startImg() {
 window.addEventListener('load', () => {
     startImg()
 })
+
+
+
+
+
+
+let carouselChart = {
+    previousChart: document.getElementById("previous-chart"),
+    nextChart: document.getElementById("next-chart"),
+    carouselContainer: document.querySelector(".grid-details .grid-container"),
+    carouselContent: document.querySelectorAll(".grid-details .grid-container .grid-carousel"),
+}
+
+function moveNextChart() {
+    // img 2 - carouselChart.carouselContainer.style.transform = `translateX(-66%)`
+    // img 3 - carouselChart.carouselContainer.style.transform = `translateX(-66%)`
+    carouselChart.carouselContainer.style.transform = `translateX(${66}%)`
+}
+
+function movePreviousChart() {
+
+    carouselChart.carouselContainer.style.transform = `translateX(${0}%)`
+}
+
+
+carouselChart.nextChart.addEventListener('click', moveNextChart)
+carouselChart.previousChart.addEventListener('click', movePreviousChart)
+
+// transform: translateX(-50%);

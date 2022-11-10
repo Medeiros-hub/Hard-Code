@@ -26,6 +26,10 @@ body {
     flex-direction: column;
 }
 
+body > * {
+    width: 100vw;
+}
+
 .top-screen {
     overflow: hidden;
     --height: 130vh;
@@ -416,6 +420,7 @@ section.bars-right .bar-extended {
 }
 
 .details-invest .container-details article {
+    z-index: 999;
     position: absolute;
     align-self: flex-end;
 
@@ -427,6 +432,7 @@ section.bars-right .bar-extended {
     display: flex;
     justify-content: center;
     gap: 10px;
+    cursor: pointer;
 }
 
 .details-invest .container-details article span i {
@@ -458,18 +464,21 @@ section.bars-right .bar-extended {
 }
 
 .grid-details .grid-container {
-    width: 200%;
+    width: 300%;
     display: flex;
+    gap: 2px;
+    transition: transform 1s ease-in-out;
 }
 
 .grid-details .grid-container .grid-carousel {
+    margin: 0 20px;
     width: fit-content;
     display: grid;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(2, 1fr);
-    gap: 50px;
+    column-gap: 50px;
+    align-items: center;
 }
-
 
 .grid-carousel .title-detail {
     grid-row: 1;
@@ -481,6 +490,21 @@ section.bars-right .bar-extended {
     display: flex;
 }
 /* ======= */
+
+.grid-carousel .description-invest {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.grid-carousel .description-invest .column-1 {
+    grid-column: 1;
+}
+.grid-carousel .description-invest .row-1 {
+    grid-row: 1;
+}
+.grid-carousel .description-invest .column-2 {
+    grid-column: 2;
+}
 
 .grid-carousel .chart-section {
     flex-direction: column;
@@ -499,7 +523,15 @@ section.bars-right .bar-extended {
     text-decoration: underline;
 }
 
+.grid-carousel .description-invest p {
+    font-size: 16px;
+    text-decoration: underline;
+
+
+}
+
 .grid-carousel img {
+    width: 100%;
 }
 
 .details-invest section.bars-right {
