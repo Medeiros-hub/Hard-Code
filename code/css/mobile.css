@@ -1,12 +1,13 @@
 @media only screen and (max-width: 800px){
-    body {
-    }
 
     .top-screen {
         overflow: hidden;
 
         --height: 130vh;
         height: var(--height);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .top-screen .athlete-slider img {
@@ -28,8 +29,9 @@
     }
 
     .top-screen-container .logo {
-        align-self: flex-start;
-        margin: 3% 10%;
+        position: relative;
+        top: 25px;
+        left: -195px;
     }
 
     .top-screen-container .hero-section {
@@ -93,7 +95,7 @@
         grid-auto-flow: dense;
         display: grid;
         align-items: center;
-        justify-items: start;
+        justify-items: center;
     }
 
     .main-about > section:first-child {
