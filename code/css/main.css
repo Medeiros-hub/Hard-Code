@@ -108,8 +108,13 @@ body > * {
 .top-screen-container {
     position: absolute;
     top: 0;
-    margin: 3% 10%;
+    margin: 0 10%;
     color: #fff;
+}
+
+.top-screen-container .logo {
+    margin-top: 25px;
+    position: absolute;
 }
 
 /***** CONTEÚDO PÁGINA TOPO *****/
@@ -510,9 +515,9 @@ section.bars-right .bar-extended {
     align-self: center;
 }
 
-.grid-carousel .description-invest .col-1 { grid-column: 1; }
-.grid-carousel .description-invest .row-1 { grid-row: 1; }
-.grid-carousel .description-invest .col-2 { grid-column: 2; }
+.col-1 { grid-column: 1; }
+.row-1 { grid-row: 1; }
+.col-2 { grid-column: 2; }
 
 .grid-carousel .chart-section {
     flex-direction: column;
@@ -592,6 +597,31 @@ section.bars-right .bar-extended {
     right: -23%;
     width: 25px;
 }
+
+.invest-test .text-group {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+}
+
+.invest-test .text-group > * {
+    width: 50%;
+}
+
+.text-group .icons-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    opacity: 0.1;
+}
+
+.text-group .icons-group > i {
+    font-size: 600%;
+}
 /***** fim CONTEÚDO DETAILS *****/
+
+
+
 
 /***** KEYFRAMES *****/
