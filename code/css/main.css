@@ -20,10 +20,11 @@
 
 body {
     background-color: var(--color-white);
-
+    overflow-x: hidden !important;
     width: fit-content;
     display: flex;
     flex-direction: column;
+    position: relative;
 }
 
 body > * {
@@ -237,7 +238,7 @@ button { /*Resetar estilo de todos os botões*/
 
 .bars-group .bar {
     background-color: #fff;
-    opacity: 0.5;
+    opacity: 0.2;
     width: 100%;
     padding: 2px;
 }
@@ -406,11 +407,13 @@ section.bars-right .bar-extended {
     color: var(--color-white);
     font-family: var(--font-Montserrat);
 
-    height: 100vh;
+    height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    gap: 100px;
+    position: relative;
 }
 
 .details-invest .container-details {
@@ -440,7 +443,6 @@ section.bars-right .bar-extended {
 }
 
 .container-details article #previous-chart {
-    opacity: .5;
 }
 .container-details article #previous-chart::after {
     content: '';
@@ -459,7 +461,6 @@ section.bars-right .bar-extended {
 /* CRIANDO O GRID */
 .details-invest .grid-details {
     overflow: hidden;
-    height: 100%;
     width: 100%;
 }
 
@@ -468,6 +469,7 @@ section.bars-right .bar-extended {
     display: flex;
     gap: 2px;
     transition: transform 1s ease-in-out;
+    transform: translateX(0%);
 }
 
 .grid-details .grid-container .grid-carousel {
@@ -494,28 +496,33 @@ section.bars-right .bar-extended {
 .grid-carousel .description-invest {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    position: relative;
+    column-gap: 20px;
 }
 
-.grid-carousel .description-invest .column-1 {
-    grid-column: 1;
+.grid-carousel .description-invest::before {
+    content: '';
+    background-color: #363636;
+    position: absolute;
+    padding: 1px;
+    height: 100%;
+    justify-self: center;
+    align-self: center;
 }
-.grid-carousel .description-invest .row-1 {
-    grid-row: 1;
-}
-.grid-carousel .description-invest .column-2 {
-    grid-column: 2;
-}
+
+.grid-carousel .description-invest .col-1 { grid-column: 1; }
+.grid-carousel .description-invest .row-1 { grid-row: 1; }
+.grid-carousel .description-invest .col-2 { grid-column: 2; }
 
 .grid-carousel .chart-section {
     flex-direction: column;
     width: fit-content;
 }
 
-.grid-carousel .title-detail h1 {
+.details-invest h1 {
     text-transform: uppercase;
     font-family: var(--font-Lora);
     font-size: 32px;
-    text-decoration: underline;
 }
 
 .grid-carousel .title-detail p {
@@ -526,8 +533,6 @@ section.bars-right .bar-extended {
 .grid-carousel .description-invest p {
     font-size: 16px;
     text-decoration: underline;
-
-
 }
 
 .grid-carousel img {
@@ -539,9 +544,54 @@ section.bars-right .bar-extended {
     right: 0;   
     width: 25px;
 }
+
+.container-details .progressBar-invest {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-details .progressBar-invest .main-bar {
+    transition: left 1s ease-in-out;
+}
+
+.invest-test {
+    font-family: var(--font-Montserrat);
+    
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    position: absolute;
+    bottom: -32em;
+}
+
+.invest-test .header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.invest-test .header h1 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--font-Lora);
+    font-size: 32px;
+}
+
+.invest-test .header img {
+    width: 70%;
+}
+
+.invest-test section.bars-right {
+    position: absolute;
+    right: 0;
+    width: 25px;
+}
 /***** fim CONTEÚDO DETAILS *****/
-
-
-
 
 /***** KEYFRAMES *****/

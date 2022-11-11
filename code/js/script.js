@@ -79,18 +79,60 @@ let carouselChart = {
     nextChart: document.getElementById("next-chart"),
     carouselContainer: document.querySelector(".grid-details .grid-container"),
     carouselContent: document.querySelectorAll(".grid-details .grid-container .grid-carousel"),
+    barProgress: document.querySelector(".container-details .progressBar-invest .main-bar"),
+    position: 0,
+    index: 0
+}
+
+carouselChart.barProgress.style.left = '0'
+function movePreviousChart() {
+    if (carouselChart.carouselContainer.style.transform == 'translateX(0%)') {
+        return
+    }
+
+    carouselChart.carouselContainer.style.transform = `translateX(${carouselChart.position + 33}%)`
+    carouselChart.position += 33
+
+    carouselChart.index--
+
+    if (carouselChart.index == 0) {
+        carouselChart.barProgress.style.left = '0'
+        carouselChart.previousChart.style.opacity = '0.5'
+    } else if (carouselChart.index == 1) {
+        carouselChart.barProgress.style.left = '33.3%'
+        carouselChart.nextChart.style.opacity = '1'
+    } else {
+        carouselChart.barProgress.style.left = '67%'
+        carouselChart.previousChart.style.opacity = '0.5'
+    }
+
 }
 
 function moveNextChart() {
-    // img 2 - carouselChart.carouselContainer.style.transform = `translateX(-66%)`
-    // img 3 - carouselChart.carouselContainer.style.transform = `translateX(-66%)`
-    carouselChart.carouselContainer.style.transform = `translateX(${66}%)`
+    if (carouselChart.carouselContainer.style.transform == 'translateX(-66%)') {
+        return
+    }
+    
+    carouselChart.carouselContainer.style.transform = `translateX(${carouselChart.position - 33}%)`
+    carouselChart.position -= 33
+
+    carouselChart.index++
+
+    if (carouselChart.index == 0) {
+        carouselChart.barProgress.style.left = '0'
+        carouselChart.nextChart.style.opacity = '0.5'
+    } else if (carouselChart.index == 1) {
+        carouselChart.barProgress.style.left = '33.3%'
+        carouselChart.previousChart.style.opacity = '1'
+    } else {
+        carouselChart.barProgress.style.left = '67%'
+        carouselChart.nextChart.style.opacity = '0.5'
+    }
+
+
 }
 
-function movePreviousChart() {
 
-    carouselChart.carouselContainer.style.transform = `translateX(${0}%)`
-}
 
 
 carouselChart.nextChart.addEventListener('click', moveNextChart)
