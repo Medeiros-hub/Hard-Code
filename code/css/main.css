@@ -557,16 +557,16 @@ section.bars-right .bar-extended {
 
 .invest-test {
     font-family: var(--font-Montserrat);
+    color: #000;
     
-    width: 100%;
+    width: 69%;
     height: 150vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     position: absolute;
-    bottom: -32em;
+    bottom: -96vh;
 }
 
 .invest-test .header {
@@ -584,12 +584,12 @@ section.bars-right .bar-extended {
 }
 
 .invest-test .header img {
-    width: 70%;
+    width: 100%;
 }
 
 .invest-test section.bars-right {
     position: absolute;
-    right: 0;
+    right: -23%;
     width: 25px;
 }
 /***** fim CONTEÚDO DETAILS *****/
