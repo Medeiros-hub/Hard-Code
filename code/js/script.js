@@ -71,9 +71,7 @@ window.addEventListener('load', () => {
 
 
 
-
-
-
+// Slider gráficos
 let carouselChart = {
     previousChart: document.getElementById("previous-chart"),
     nextChart: document.getElementById("next-chart"),
@@ -132,10 +130,15 @@ function moveNextChart() {
 
 }
 
-
-
-
 carouselChart.nextChart.addEventListener('click', moveNextChart)
 carouselChart.previousChart.addEventListener('click', movePreviousChart)
 
-// transform: translateX(-50%);
+
+
+
+
+// slider img default
+
+let slider_imgDefault = {
+    imgDiv: document.querySelector(".slider-images .group-1 > div")
+}

@@ -158,7 +158,7 @@
     /***** fim CONTEÚDO ABOUT US *****/
     
     .details-invest {
-        height: fit-content;
+        height: 230vh;
     }
 
     .details-invest .container-details {
@@ -269,4 +269,116 @@
     .grid-carousel .description-invest::before {
         display: none;
     }
+
+
+    
+}
+
+@media only screen and (max-width: 1000px){
+    
+    .invest-test {
+        bottom: -60%;
+    }
+
+    .invest-test .header h1 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .invest-test .text-group > * {
+        width: 100%;
+    }
+
+    .text-group .icons-group {
+        display: none;
+    }
+
+    .buz-news {
+        margin-top: 180vh;
+    }
+
+    .buz-news .sec-news-01 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .buz-news .sec-news-02 {
+        overflow: hidden;
+    }
+
+    .buz-famous img {
+        width: 90%;
+    }
+
+    .buz-news .description h1 {
+        font-size: 20px;
+    }
+
+
+    .for-startups {
+        flex-direction: column;
+        font-size: 12px;
+        height: fit-content;
+    }
+
+    .for-startups .description {
+        flex-direction: column;
+    }
+
+    .for-startups .description > div {
+        width: 100%;
+        text-align: center;
+
+    }
+
+    .for-startups .description > div img[alt="Jay Z"] {
+        width: 50% !important;
+    }
+
+    .for-startups .description div h1 {
+        font-size: 21px;
+        width: 100%;
+    }
+
+    .for-startups button {
+        display: none;
+    }
+
+    
+
+
+    .slider-images {
+        height: fit-content;
+    }
+
+    .slider-images .groups > div img {
+        width: 40%;
+    }
+
+    .slider-images .groups.group-3 {
+        display: none;
+    }
+
+
+
+    footer {
+        height: fit-content;
+    }
+
+    .list-about-us .footer-container .list-group {
+        flex-direction: column;
+    }
+
+    .list-about-us .footer-container > div:last-child {
+        flex-direction: column;
+    }
+
+    footer .social-midia {
+        display: flex;
+        justify-content: space-between;
+    }
+    .list-about-us .footer-container .social-midia i {
+        margin: 0;
+    }
+
 }
